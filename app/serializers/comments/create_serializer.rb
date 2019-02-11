@@ -1,3 +1,5 @@
 class Comments::CreateSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :text_body
+  belongs_to :user
+  belongs_to :event
 end
